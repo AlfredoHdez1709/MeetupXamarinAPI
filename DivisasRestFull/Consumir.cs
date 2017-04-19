@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 namespace DivisasRestFull
 {
-	public class Conexion
+	public class Consumir
 	{
 		[JsonProperty("disclaimer")]
 		public string Disclaimer { get; set; }

@@ -8,7 +8,7 @@ namespace DivisasRestFull
 		{
 			InitializeComponent();
 
-			MainPage = new DivisasRestFullPage();
+			MainPage = new HomePage();
 		}
 
 		protected override void OnStart()

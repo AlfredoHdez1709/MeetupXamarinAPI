@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
+using System.Linq;
 
 namespace DivisasRestFull
 {
@@ -7,6 +9,9 @@ namespace DivisasRestFull
 		public DivisasRestFullPage()
 		{
 			InitializeComponent();
+			inicialList();
 		}
+
+
 	}
 }

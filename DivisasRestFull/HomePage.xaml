@@ -1,5 +1,31 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DivisasRestFull.HomePage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DivisasRestFull.HomePage"
+	Title="Divisas">
 	<ContentPage.Content>
+		<StackLayout>
+                        <ActivityIndicator x:Name="waitActivityIndicator"/>
+                        <Entry x:Name="amoutEntry"
+                                Placeholder="Valor a convertir"
+                                Keyboard="Numeric"/>
+                        <Picker x:Name="sourcePicker"
+                                Title="Moneda Origen"/>
+                        <Picker x:Name="targetPicker"
+                                Title="Moneda destino"/>
+                        <Button x:Name="convertButton"
+                                BackgroundColor="Navy"
+                                Text="Convertir"
+                                FontSize="28"
+                                TextColor="White"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"/>
+                        <Label x:Name="convertedlabel"
+                                Font="20"
+                                Text="Sin respuesta"
+                                FontAttributes="Bold"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand"/>
+                </StackLayout> 
+
+
 	</ContentPage.Content>
 </ContentPage>
